@@ -1,0 +1,202 @@
+2024-03-13 11:16:45 [INFO][restartedMain ][ c.e.a.AddressbookappApplication:51] Starting AddressbookappApplication using Java 17.0.8.1 with PID 14032 (C:\Users\VIKAS DEOKAR\IdeaProjects\addressbookapp\target\classes started by VIKAS DEOKAR in C:\Users\VIKAS DEOKAR\IdeaProjects\addressbookapp)
+   2024-03-13 11:16:45 [INFO][restartedMain ][ c.e.a.AddressbookappApplication:634] No active profile set, falling back to 1 default profile: "default"
+   2024-03-13 11:16:45 [INFO][restartedMain ][ o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+   2024-03-13 11:16:45 [INFO][restartedMain ][ o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+   2024-03-13 11:16:45 [INFO][restartedMain ][ o.s.d.r.c.RepositoryConfigurationDelegate:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+   2024-03-13 11:16:45 [INFO][restartedMain ][ o.s.d.r.c.RepositoryConfigurationDelegate:208] Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+   2024-03-13 11:16:46 [INFO][restartedMain ][ o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+   2024-03-13 11:16:46 [INFO][restartedMain ][ o.a.c.c.StandardService:173] Starting service [Tomcat]
+   2024-03-13 11:16:46 [INFO][restartedMain ][ o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.12]
+   2024-03-13 11:16:46 [INFO][restartedMain ][ o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+   2024-03-13 11:16:46 [INFO][restartedMain ][ o.s.b.w.s.c.ServletWebServerApplicationContext:291] Root WebApplicationContext: initialization completed in 1145 ms
+   2024-03-13 11:16:46 [INFO][restartedMain ][ o.h.j.i.u.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+   2024-03-13 11:16:46 [INFO][restartedMain ][ o.h.Version:44] HHH000412: Hibernate ORM core version 6.2.7.Final
+   2024-03-13 11:16:46 [INFO][restartedMain ][ o.h.c.Environment:191] HHH000406: Using bytecode reflection optimizer
+   2024-03-13 11:16:46 [INFO][restartedMain ][ o.h.b.i.BytecodeProviderInitiator:53] HHH000021: Bytecode provider name : bytebuddy
+   2024-03-13 11:16:46 [INFO][restartedMain ][ o.s.o.j.p.SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+   2024-03-13 11:16:46 [INFO][restartedMain ][ c.z.h.HikariDataSource:110] HikariPool-1 - Starting...
+   2024-03-13 11:16:47 [INFO][restartedMain ][ c.z.h.p.HikariPool:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c4aa3d1
+   2024-03-13 11:16:47 [INFO][restartedMain ][ c.z.h.HikariDataSource:123] HikariPool-1 - Start completed.
+   2024-03-13 11:16:47 [INFO][restartedMain ][ o.h.b.i.BytecodeProviderInitiator:53] HHH000021: Bytecode provider name : bytebuddy
+   2024-03-13 11:16:47 [INFO][restartedMain ][ o.h.e.t.j.p.i.JtaPlatformInitiator:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+   2024-03-13 11:16:47 [WARN][restartedMain ][ o.h.t.s.i.ExceptionHandlerLoggedImpl:27] GenerationTarget encountered exception accepting command : Error executing DDL "alter table broker_profile add column id integer not null auto_increment" via JDBC [Incorrect table definition; there can be only one auto column and it must be defined as a key]
+   org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table broker_profile add column id integer not null auto_increment" via JDBC [Incorrect table definition; there can be only one auto column and it must be defined as a key]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:92)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:574)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:514)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:333)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:284)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:292)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1455)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1155)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.addressbookapp.AddressbookappApplication.main(AddressbookappApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:78)
+	... 43 common frames omitted
+2024-03-13 11:16:47 [INFO][restartedMain ][ o.s.o.j.LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+   2024-03-13 11:16:48 [WARN][restartedMain ][ o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+   2024-03-13 11:16:48 [WARN][restartedMain ][ o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'contactController' method 
+com.example.addressbookapp.controller.ContactController#createNewContact(ContactDto)
+to {POST [/api/mycontacts]}: There is already 'brokerController' bean method
+com.example.addressbookapp.controller.BrokerController#create(BrokerDto) mapped.
+   2024-03-13 11:16:48 [INFO][restartedMain ][ o.s.o.j.LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+   2024-03-13 11:16:48 [INFO][restartedMain ][ c.z.h.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+   2024-03-13 11:16:48 [INFO][restartedMain ][ c.z.h.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+   2024-03-13 11:16:48 [INFO][restartedMain ][ o.a.c.c.StandardService:173] Stopping service [Tomcat]
+   2024-03-13 11:16:48 [INFO][restartedMain ][ o.s.b.a.l.ConditionEvaluationReportLogger:82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+   2024-03-13 11:16:48 [ERROR][restartedMain ][ o.s.b.SpringApplication:824] Application run failed
+   org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'contactController' method 
+com.example.addressbookapp.controller.ContactController#createNewContact(ContactDto)
+to {POST [/api/mycontacts]}: There is already 'brokerController' bean method
+com.example.addressbookapp.controller.BrokerController#create(BrokerDto) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.addressbookapp.AddressbookappApplication.main(AddressbookappApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'contactController' method 
+com.example.addressbookapp.controller.ContactController#createNewContact(ContactDto)
+to {POST [/api/mycontacts]}: There is already 'brokerController' bean method
+com.example.addressbookapp.controller.BrokerController#create(BrokerDto) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:667)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:633)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:441)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:225)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 21 common frames omitted
+2024-03-13 11:19:40 [INFO][restartedMain ][ c.e.a.AddressbookappApplication:51] Starting AddressbookappApplication using Java 17.0.8.1 with PID 7428 (C:\Users\VIKAS DEOKAR\IdeaProjects\addressbookapp\target\classes started by VIKAS DEOKAR in C:\Users\VIKAS DEOKAR\IdeaProjects\addressbookapp)
+   2024-03-13 11:19:40 [INFO][restartedMain ][ c.e.a.AddressbookappApplication:634] No active profile set, falling back to 1 default profile: "default"
+   2024-03-13 11:19:40 [INFO][restartedMain ][ o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+   2024-03-13 11:19:40 [INFO][restartedMain ][ o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+   2024-03-13 11:19:41 [INFO][restartedMain ][ o.s.d.r.c.RepositoryConfigurationDelegate:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+   2024-03-13 11:19:41 [INFO][restartedMain ][ o.s.d.r.c.RepositoryConfigurationDelegate:208] Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+   2024-03-13 11:19:41 [INFO][restartedMain ][ o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+   2024-03-13 11:19:41 [INFO][restartedMain ][ o.a.c.c.StandardService:173] Starting service [Tomcat]
+   2024-03-13 11:19:41 [INFO][restartedMain ][ o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.12]
+   2024-03-13 11:19:41 [INFO][restartedMain ][ o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+   2024-03-13 11:19:41 [INFO][restartedMain ][ o.s.b.w.s.c.ServletWebServerApplicationContext:291] Root WebApplicationContext: initialization completed in 890 ms
+   2024-03-13 11:19:41 [INFO][restartedMain ][ o.h.j.i.u.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+   2024-03-13 11:19:41 [INFO][restartedMain ][ o.h.Version:44] HHH000412: Hibernate ORM core version 6.2.7.Final
+   2024-03-13 11:19:41 [INFO][restartedMain ][ o.h.c.Environment:191] HHH000406: Using bytecode reflection optimizer
+   2024-03-13 11:19:41 [INFO][restartedMain ][ o.h.b.i.BytecodeProviderInitiator:53] HHH000021: Bytecode provider name : bytebuddy
+   2024-03-13 11:19:41 [INFO][restartedMain ][ o.s.o.j.p.SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+   2024-03-13 11:19:41 [INFO][restartedMain ][ c.z.h.HikariDataSource:110] HikariPool-1 - Starting...
+   2024-03-13 11:19:41 [INFO][restartedMain ][ c.z.h.p.HikariPool:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3eca3e1d
+   2024-03-13 11:19:41 [INFO][restartedMain ][ c.z.h.HikariDataSource:123] HikariPool-1 - Start completed.
+   2024-03-13 11:19:42 [INFO][restartedMain ][ o.h.b.i.BytecodeProviderInitiator:53] HHH000021: Bytecode provider name : bytebuddy
+   2024-03-13 11:19:42 [INFO][restartedMain ][ o.h.e.t.j.p.i.JtaPlatformInitiator:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+   2024-03-13 11:19:42 [INFO][restartedMain ][ o.s.o.j.LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+   2024-03-13 11:19:42 [WARN][restartedMain ][ o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+   2024-03-13 11:19:43 [INFO][restartedMain ][ o.s.b.d.a.OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+   2024-03-13 11:19:43 [INFO][restartedMain ][ o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+   2024-03-13 11:19:43 [INFO][restartedMain ][ c.e.a.AddressbookappApplication:57] Started AddressbookappApplication in 2.961 seconds (process running for 3.468)
+   2024-03-13 11:23:14 [INFO][http-nio-8080-exec-1 ][ o.a.c.c.C.[.[.[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+   2024-03-13 11:23:14 [INFO][http-nio-8080-exec-1 ][ o.s.w.s.DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+   2024-03-13 11:23:14 [INFO][http-nio-8080-exec-1 ][ o.s.w.s.DispatcherServlet:554] Completed initialization in 1 ms
+   2024-03-13 11:23:14 [WARN][http-nio-8080-exec-1 ][ o.s.w.s.m.s.DefaultHandlerExceptionResolver:207] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+   2024-03-13 11:29:34 [WARN][http-nio-8080-exec-4 ][ o.s.w.s.m.s.DefaultHandlerExceptionResolver:207] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+   2024-03-13 11:31:07 [INFO][SpringApplicationShutdownHook ][ o.s.o.j.LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+   2024-03-13 11:31:07 [INFO][SpringApplicationShutdownHook ][ c.z.h.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+   2024-03-13 11:31:07 [INFO][SpringApplicationShutdownHook ][ c.z.h.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+   2024-03-13 13:06:12 [INFO][restartedMain ][ c.e.a.AddressbookappApplication:51] Starting AddressbookappApplication using Java 17.0.8.1 with PID 29756 (C:\Users\VIKAS DEOKAR\IdeaProjects\addressbookapp\target\classes started by VIKAS DEOKAR in C:\Users\VIKAS DEOKAR\IdeaProjects\addressbookapp)
+   2024-03-13 13:06:12 [INFO][restartedMain ][ c.e.a.AddressbookappApplication:634] No active profile set, falling back to 1 default profile: "default"
+   2024-03-13 13:06:12 [INFO][restartedMain ][ o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+   2024-03-13 13:06:12 [INFO][restartedMain ][ o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+   2024-03-13 13:06:12 [INFO][restartedMain ][ o.s.d.r.c.RepositoryConfigurationDelegate:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+   2024-03-13 13:06:12 [INFO][restartedMain ][ o.s.d.r.c.RepositoryConfigurationDelegate:208] Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+   2024-03-13 13:06:13 [INFO][restartedMain ][ o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+   2024-03-13 13:06:13 [INFO][restartedMain ][ o.a.c.c.StandardService:173] Starting service [Tomcat]
+   2024-03-13 13:06:13 [INFO][restartedMain ][ o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.12]
+   2024-03-13 13:06:13 [INFO][restartedMain ][ o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+   2024-03-13 13:06:13 [INFO][restartedMain ][ o.s.b.w.s.c.ServletWebServerApplicationContext:291] Root WebApplicationContext: initialization completed in 888 ms
+   2024-03-13 13:06:13 [INFO][restartedMain ][ o.h.j.i.u.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+   2024-03-13 13:06:13 [INFO][restartedMain ][ o.h.Version:44] HHH000412: Hibernate ORM core version 6.2.7.Final
+   2024-03-13 13:06:13 [INFO][restartedMain ][ o.h.c.Environment:191] HHH000406: Using bytecode reflection optimizer
+   2024-03-13 13:06:13 [INFO][restartedMain ][ o.h.b.i.BytecodeProviderInitiator:53] HHH000021: Bytecode provider name : bytebuddy
+   2024-03-13 13:06:13 [INFO][restartedMain ][ o.s.o.j.p.SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+   2024-03-13 13:06:13 [INFO][restartedMain ][ c.z.h.HikariDataSource:110] HikariPool-1 - Starting...
+   2024-03-13 13:06:13 [INFO][restartedMain ][ c.z.h.p.HikariPool:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3eca3e1d
+   2024-03-13 13:06:13 [INFO][restartedMain ][ c.z.h.HikariDataSource:123] HikariPool-1 - Start completed.
+   2024-03-13 13:06:14 [INFO][restartedMain ][ o.h.b.i.BytecodeProviderInitiator:53] HHH000021: Bytecode provider name : bytebuddy
+   2024-03-13 13:06:14 [INFO][restartedMain ][ o.h.e.t.j.p.i.JtaPlatformInitiator:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+   2024-03-13 13:06:14 [INFO][restartedMain ][ o.s.o.j.LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+   2024-03-13 13:06:14 [WARN][restartedMain ][ o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+   2024-03-13 13:06:15 [INFO][restartedMain ][ o.s.b.d.a.OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+   2024-03-13 13:06:15 [INFO][restartedMain ][ o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+   2024-03-13 13:06:15 [INFO][restartedMain ][ c.e.a.AddressbookappApplication:57] Started AddressbookappApplication in 2.899 seconds (process running for 3.402)
+   2024-03-13 13:06:49 [INFO][http-nio-8080-exec-2 ][ o.a.c.c.C.[.[.[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+   2024-03-13 13:06:49 [INFO][http-nio-8080-exec-2 ][ o.s.w.s.DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+   2024-03-13 13:06:49 [INFO][http-nio-8080-exec-2 ][ o.s.w.s.DispatcherServlet:554] Completed initialization in 1 ms
+   2024-03-13 13:08:51 [INFO][SpringApplicationShutdownHook ][ o.s.o.j.LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+   2024-03-13 13:08:51 [INFO][SpringApplicationShutdownHook ][ c.z.h.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+   2024-03-13 13:08:51 [INFO][SpringApplicationShutdownHook ][ c.z.h.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+   
